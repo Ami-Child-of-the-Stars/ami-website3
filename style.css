@@ -102,13 +102,16 @@ body {
 }
 
 /* Style for download links within the Ami message */
-.ami-download a {
-  /* Use a warm gold color that stands out against the cosmic background */
-  color: #ffd700;
+/* Apply the same colour to normal, visited, and active states */
+.ami-download a,
+.ami-download a:link,
+.ami-download a:visited {
+  /* Set link color to white to match the surrounding text */
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* On hover, shift to a deeper gold/orange to indicate interactivity */
+/* On hover, slightly dim the color to provide subtle feedback */
 .ami-download a:hover {
-  color: #ffa500;
+  color: #dddddd;
 }
