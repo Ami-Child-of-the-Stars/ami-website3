@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  background-image: url("assets/starscape.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.email-input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.submit-button {
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff70a6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #f45c9a;
+}
+
+.hidden {
+  display: none;
+}
+
+.ami-message {
+  text-align: center;
+  margin-top: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.ami-image {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.ami-text p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

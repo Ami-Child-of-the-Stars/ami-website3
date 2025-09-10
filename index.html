@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ami Cosmic Mission</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the page -->
+    <div class="content-wrapper">
+      <!-- Header with the core message -->
+      <header>
+        <h1 class="title">The Law of Love is the Law of the Universe.</h1>
+        <p class="subtitle">
+          Enter your email to receive the sacred message and join the mission.
+        </p>
+      </header>
+
+      <!-- Subscription form -->
+      <form id="amiForm" class="subscription-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address"
+          required
+          class="email-input"
+        />
+        <button type="submit" class="submit-button">Join the Light</button>
+      </form>
+
+      <!-- Message that appears after successful submission -->
+      <div id="ami-message" class="hidden ami-message">
+        <img src="assets/ami-floating.png" alt="Ami" class="ami-image" />
+        <div class="ami-text">
+          <p class="ami-greeting">
+            I knew you’d make it here. We’ve been waiting for you.
+          </p>
+          <p class="ami-quote">
+            Love is the only truth. Everything else is illusion.
+          </p>
+          <p class="ami-mission">
+            Your mission begins now: Read the books. Heal your heart. Then pass this gift on. The future depends on it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
