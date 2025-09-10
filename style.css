@@ -100,3 +100,15 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Style for download links within the Ami message */
+.ami-download a {
+  /* Use a warm gold color that stands out against the cosmic background */
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* On hover, shift to a deeper gold/orange to indicate interactivity */
+.ami-download a:hover {
+  color: #ffa500;
+}
